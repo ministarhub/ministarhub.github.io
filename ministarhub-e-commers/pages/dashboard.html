@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Months', 'Sales', 'Expenses'],
+                ['jan', 0, 50],
+                ['feb', 0, 60],
+                ['mch', 0, 20],
+                ['apr', 0, 40],
+                ['may', 0, 80],
+                ['jun', 0, 100],
+                ['jly', 0, 200],
+                ['aug', 0, 300],
+                ['sep', 0, 540],
+            ]);
+
+            var options = {
+                title: 'Company Performance',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <title>Dashbord</title>
+</head>
+
+<body class="">
+    <div class="top-background"></div>
+    <!-- side bar -->
+    <aside class="sidebar" id="sidemenu">
+        <div class="side-bar-header">
+            <img id="logo" src="img/logo-ct-dark.png" alt="">
+            <a href="dashboard.html" class="">
+                <span>Ministarhub Dashbord</span>
+            </a>
+        </div>
+        <hr>
+        <div class="sidebar-text">
+            <ul class="">
+                <li><a href=""><b>Dashbord</b></a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="Billing.html">Billing</a></li>
+                <li><a href="">Virtual Reality</a></li>
+                <li><a href="">RTL</a></li>
+            </ul>
+            <div class="account">
+                <h3>ACCOUNT PAGES</h3>
+
+                <ul>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="sign in.html">sign in</a></li>
+                    <li><a href="sign up.html">sign up</a></li>
+
+                </ul>
+                <h4>Need help?</h4>
+                <p>please check our docs</p>
+                <button class="btn1">documentation</button> <br>
+                <button class="btn2">Upgrade to pro</button>
+            </div>
+        </div>
+        </div>
+
+    </aside>
+
+
+    <!-- Main content -->
+
+    <main class="main-content-box">
+
+        <!-- navigation -->
+        <div class="header">
+            <nav class="navbar">
+
+                <ul class="nav-list">
+                    <li class="nav-items"><a href="" class="nav-link">Page/Dashbord</a> <br><b>Dashbord</b></li>
+
+                </ul>
+                <ul class="nav-list">
+                    <input class="search-bar" type="search" placeholder="Type here">
+                    <li class="nav-items"><a href="" class="nav-link">Sign In</a></li>
+                </ul>
+
+
+            </nav>
+        </div>
+
+        <!-- content box -->
+
+        <div>
+            <div class="content">
+                <div class="money">
+                    <div class="money2">
+                        <p>TODAY'S MONEY</p>
+                        <h5>$53,000</h5>
+                        <p><span>+55% </span> since yesterday</p>
+                    </div>
+                </div>
+
+                <div class="money">
+                    <div class="user">
+                        <p>TODAY'S USER</p>
+                        <h5>2,300</h5>
+                        <p><span>+3%</span>since last year </p>
+                    </div>
+                </div>
+
+                <div class="money">
+                    <div class="client">
+                        <p>NEW CLIENTS</p>
+                        <h5>+3,462</h5>
+                        <p><span>-2%</span> since last quarter</p>
+                    </div>
+                </div>
+
+                <div class="money">
+                    <div class="sale">
+                        <p>SALE</p>
+                        <h5>$103,430</h5>
+                        <p><span>+5%</span> than last month</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- start box -->
+
+            <div class="stat">
+                <!-- left box content -->
+
+                <div class="left">
+                    <!-- sales overview -->
+                    <div class="sales-box1">
+                        <div style="background: white; border-radius: 30px;padding: 12px;">
+                            <p><b>Sales Overview</b></p>
+                            <h4>4% more in 2021</h4>
+
+                            <div class="chart" id="curve_chart" style="width: 800px; height: 600px; "></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- right box content -->
+
+                <div class="right">
+
+
+
+                    <div class="right1">
+                        <!-- add slide -->
+                        <div>
+                            <div>
+
+                                <div class="sale-box2 saler">
+                                    <div>
+                                        <img src="img/carousel-1.jpg">
+                                    </div>
+                                    <div class="sale-text text1">
+                                        <h1>
+                                            Fastest way to creat a web page
+                                        </h1>
+                                        <p>thats my skill i'm not really specifivally talaented at anything except to
+                                            learn
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="sale-box3 saler">
+                                    <div>
+                                        <img src="img/carousel-2.jpg">
+                                    </div>
+                                    <div class="sale-text text2">
+                                        <h1>
+                                            sheare with us your design tips
+                                        </h1>
+                                        <p>dont be afried to be wrong because you cant learn anything from compliments
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="sale-box4 saler">
+                                    <div>
+                                        <img src="img/carousel-3.jpg">
+                                    </div>
+                                    <div class="sale-text text3">
+                                        <h1>
+                                            get started with Ministarhub
+                                        </h1>
+                                        <p>there's nothing i really want to do in life that i wasnt able to get good at.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end of right box content -->
+
+            </div>
+            <div class="tables">
+                <!-- table of sales -->
+                <div class="table-top">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-role1">
+                                        <div class="flag1">
+                                            <img src="img/icons/flags/GB.png" alt="">
+                                        </div>
+                                        <div class="country1">
+                                            <p>country:</p>
+                                            <h6><b>united States</b></h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>Sales</p>
+                                        <h6><b>2500</b></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>Value</p>
+                                        <h6><b>$230,900</b></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>bounce</p>
+                                        <h6><b>29.9%</b></h6>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-role1">
+                                        <div class="flag1">
+                                            <img src="img/icons/flags/DE.png" alt="">
+                                        </div>
+                                        <div class="country1">
+                                            <p>country:</p>
+                                            <h6><b>united States</b></h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>Sales</p>
+                                        <h6><b>2500</b></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>Value</p>
+                                        <h6><b>$230,900</b></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>bounce</p>
+                                        <h6><b>29.9%</b></h6>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-role1">
+                                        <div class="flag1">
+                                            <img src="img/icons/flags/BR.png" alt="">
+                                        </div>
+                                        <div class="country1">
+                                            <p>country:</p>
+                                            <h6><b>united States</b></h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>Sales</p>
+                                        <h6><b>2500</b></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>Value</p>
+                                        <h6><b>$230,900</b></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>bounce</p>
+                                        <h6><b>29.9%</b></h6>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-role1">
+                                        <div class="flag1">
+                                            <img src="img/icons/flags/AU.png" alt="">
+                                        </div>
+                                        <div class="country1">
+
+                                            <p>country:</p>
+                                            <h6><b>united States</b></h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>Sales</p>
+                                        <h6><b>2500</b></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>Value</p>
+                                        <h6><b>$230,900</b></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="sales-value">
+                                        <p>bounce</p>
+                                        <h6><b>29.9%</b></h6>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- table of sales part two -->
+                <div class="table-down">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-role1">
+                                        <div class="flag1">
+                                            <img src="img/icons/flags/US.png" alt="">
+                                        </div>
+                                        <div class="country1">
+                                            <p>Device:</p>
+                                            <h6><b>250 in stock, 346+ sold</b></h6>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-role1">
+                                        <div class="flag1">
+                                            <img src="img/icons/flags/US.png" alt="">
+                                        </div>
+                                        <div class="country1">
+                                            <p>Tickets:</p>
+                                            <h6><b>123 closed, 15 open</b></h6>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-role1">
+                                        <div class="flag1">
+                                            <img src="img/icons/flags/US.png" alt="">
+                                        </div>
+                                        <div class="country1">
+                                            <p>Error logs:</p>
+                                            <h6><b>1 is active, go closed</b></h6>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-role1">
+                                        <div class="flag1">
+                                            <img src="img/icons/flags/US.png" alt="">
+                                        </div>
+                                        <div class="country1">
+
+                                            <p>Happy users</p>
+                                            <h6><b>+430</b></h6>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
