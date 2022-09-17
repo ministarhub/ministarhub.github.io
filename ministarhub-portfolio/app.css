@@ -28,9 +28,13 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    background: #7270ce;
+    width: 80%;
+    border-radius: 10px;
 }
-.logo{
-    width: 140px;
+nav img{
+    width: 250px;
 }
 nav ul li{
     display: inline-block;
@@ -49,7 +53,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #1714e6;
+    background:  #b8b7d6;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -60,6 +64,16 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+.header-text p{
+    font-size: 30px;
+    cursor: pointer;
+    transition: 200ms;
+}
+.header-text p:hover{
+    font-size: 60px;
+    color: #7270ce ;
+}
+
 .header-text{
     margin-top: 20%;
     font-size: 20px;
@@ -69,7 +83,7 @@ nav ul li a:hover::after{
     margin-top: 20%;
 }
 .header-text h1 span{
-    color:  #1714e6;
+    color:   #7270ce;
 }
 
 /* profile */
@@ -113,7 +127,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background:  #1714e6;
+    background:   #7270ce;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -128,7 +142,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color:  #1714e6;
+    color:   #7270ce;
     font-size: 20px;
 }
 
@@ -170,7 +184,7 @@ nav ul li a:hover::after{
 }
 
 .competence-list div:hover{
-    background:  #1714e6;
+    background:   #7270ce;
     transform: translateY(-10px);
 
 }
@@ -220,7 +234,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff0;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -284,6 +298,10 @@ nav ul li a:hover::after{
     background: #ff004f;
     cursor: pointer;
 }
+.btn:hover{
+    background: green;
+    width: 170px;
+}
 
     
     
@@ -313,13 +331,16 @@ nav .fas{
         margin-top: 100%;
         font-size: 16px;
     }
-    .header-text h1 {
-        font-size: 30px;
+    nav{
+        width: 89%;
     }
+
     nav .fas{
         display: inline-block;
         font-size:25px ;
+        right: 0;
     }
+
     nav ul {
         background: #ff004f;
         position: fixed;
@@ -347,12 +368,15 @@ nav .fas{
     }
      .header-text h1{
         font-size: 60px;
-        margin-top: 20%;
+        margin-top: 0%;
     } 
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
-    
+    .header-text p:hover{
+        font-size: 40px;
+        color: #7270ce ;
+    }
 }
 
 #msg{
