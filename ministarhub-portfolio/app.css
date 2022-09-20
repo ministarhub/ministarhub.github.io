@@ -320,25 +320,31 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-
-/* css for small screen */
 nav .fas{
     display: none;
 }
+/* css for small screen */
+
 
 @media only screen and (max-width: 1000px) {
+
+
     .header-text{
         margin-top: 100%;
         font-size: 16px;
     }
     nav{
         width: 89%;
+        z-index: 2;
+    
+        
     }
 
     nav .fas{
         display: inline-block;
         font-size:25px ;
         right: 0;
+        z-index: 3;
     }
 
     nav ul {
