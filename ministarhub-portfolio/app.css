@@ -76,7 +76,6 @@ nav ul li a:hover::after{
 
 .header-text{
     margin-top: 20%;
-    font-size: 20px;
 }
 .header-text h1{
     font-size: 60px;
@@ -328,14 +327,24 @@ nav .fas{
 
 @media only screen and (max-width: 1000px) {
 
-
+body{
+    overflow-x: hidden;
+}
     .header-text{
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 16px;
+        width: 100%;
+        position: absolute;
+    }
+    .header-text h1{
+        font-size: 60px;
+        margin-top: 20%;
+        
     }
     nav{
         width: 89%;
         z-index: 2;
+        margin-bottom: 20%;
     
         
     }
@@ -368,14 +377,6 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
-    .header-text{
-        margin-top: 20%;
-        font-size: 30px;
-    }
-     .header-text h1{
-        font-size: 60px;
-        margin-top: 0%;
-    } 
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
