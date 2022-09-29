@@ -39,6 +39,7 @@ const Create = () => {
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Title:</label>
         <input
+        placeholder="Enter a title"
           type="text"
           id="title"
           value={title}
@@ -47,6 +48,7 @@ const Create = () => {
 
         <label htmlFor="method">Method:</label>
         <textarea
+        placeholder='Enter a quote'
           id="method"
           value={method}
           onChange={(e) => setMethod(e.target.value)}
@@ -54,6 +56,7 @@ const Create = () => {
 
         <label htmlFor="rating">Rating:</label>
         <input
+        placeholder='Your ratiing'
           type="number"
           id="rating"
           value={rating}
