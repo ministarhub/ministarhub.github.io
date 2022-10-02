@@ -342,16 +342,18 @@ body{
         
     }
     nav{
-        width: 89%;
+        width: 100%;
         z-index: 2;
         margin-bottom: 20%;
+        margin-left: -10%;
+        border-radius: 0;
     
         
     }
 
     nav .fas{
         display: inline-block;
-        font-size:25px ;
+        font-size:40px ;
         right: 0;
         z-index: 3;
     }
